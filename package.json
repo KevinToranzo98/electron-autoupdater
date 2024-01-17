@@ -12,6 +12,11 @@
     "make:mac": "electron-forge make --platform darwin",
     "dist": "electron-builder"
   },
+  "repository": "https://github.com/KevinToranzo98/electron-autoupdater",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
   "build": {
     "appId": "com.coderjeet.autoupdater",
     "productName": "Autoupdater app",
