@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Box Custodia y Gestión Digital</title>
+  <link rel="stylesheet" href="main.css" />
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const loader = document.querySelector('.loader');
+      const img = document.querySelector('img');
+
+      img.addEventListener('load', () => {
+        // Ajusta el tamaño de la ventana a las dimensiones de la imagen
+        const { width, height } = img.getBoundingClientRect();
+        const { outerWidth, outerHeight } = window;
+
+        // Ajusta el tamaño de la ventana de Electron
+        window.resizeTo(width + (outerWidth - window.innerWidth), height + (outerHeight - window.innerHeight));
+
+      });
+
+      img.src = './assets/images/splash.png';
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="loader">
+    <img alt="Box Custodia y Gestión Digital" width="350px" height="200px">
+  </div>
+  <!-- <div id="drop-area">
+      <p>Arrastra y suelta un archivo PDF aquí, o haz clic para seleccionarlo desde tu computadora.</p>
+    </div>
+    <p id="file-name-display"></p>
+    <input style="display: none" type="file" id="file-input" accept=".pdf">
+    <div id="pdfContainer">
+      <canvas id="pdfCanvas"></canvas>
+      <div id="selectionOverlay"></div>
+    </div>    
+    <div id="pdfViewer">
+      <div id="toolbarContainer">
+        <div id="toolbarViewer">
+          <div id="pager">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button id="previous">Anterior</button>
+      <button id="next">Siguiente</button>
+    </div>
+    <button id="btn-signer">Firmar</button>
+    <script src="renderer.js"></script>
+    <script src="viewer.js"></script>
+    <script src="./services/documentSigner/documentSigner.js"></script>
+    <script src="./assets/libs/pdfjs-dist/build/pdf.js"></script> -->
+</body>
+
+</html>

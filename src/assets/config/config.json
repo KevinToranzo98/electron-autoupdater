@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://pki-dev.boxcustodia.com",
+  "platform": "PKI",
+  "version": "1.0.0",
+  "file":"local"
+}
